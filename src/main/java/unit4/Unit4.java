@@ -63,7 +63,7 @@ public class Unit4 {
             return temp;
         }
         for(int i=0; i<n; i++){
-            temp+=str + " "; 
+            temp+=str; 
         }
         return temp;
     }
@@ -193,20 +193,20 @@ public class Unit4 {
         for(int i=0; i<n; i++){
             System.out.print("*"); 
         }
-        System.out.print("\n ");
+        System.out.print("\n");
         
         for(int i=0; i<n; i++) { 
             for(int j=0; j<n; j++){
                 System.out.print("*");
             }
-            System.out.print("\n ");
+            System.out.print("\n");
         }
 
         for(int i=1; i<=n; i++){
             for(int j=1; j<=i; j++){
-                    System.out.print("* ");
+                    System.out.print("*");
             }
-            System.out.print("\n ");
+            System.out.print("\n");
         }
     }
 
@@ -233,11 +233,20 @@ public class Unit4 {
     public void multiplicationTable(int n) {
         // TODO: Implement this method
         
-        for(int row=1; row<=n; row++){
-            for(int col=1; col<=n; col++){
-                System.out.print(col + " ");
+        int[] apple= new int[n];
+        for(int i=1; i<=n; i++){
+            a[i-1]=i; 
+        }
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                System.oout.print(a[j]+"\t");
             }
-            System.out.print(row + " ");
+            for(int j=0; j<n; j++){
+                a[j]+=j+1;
+            }
+            System.out.print("\n");
         }
     }
+        
+    
 }
