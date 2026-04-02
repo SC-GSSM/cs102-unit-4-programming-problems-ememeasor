@@ -55,7 +55,11 @@ public class Unit4 {
      */
     public String repeatString(String str, int n) {
         // TODO: Implement this method
-        return "";
+        String temp="";
+        for(int i=0 i<n; i++){
+            temp+=str; 
+        }
+        return temp;
     }
 
     /**
@@ -79,7 +83,11 @@ public class Unit4 {
      */
     public int findFactorial(int n) {
         // TODO: Implement this method
-        return 0;
+        int start=1;
+        for(int i=1; i<=n; i++){
+            start*=i;
+        }
+        return start;
     }
 
     /**
@@ -103,7 +111,15 @@ public class Unit4 {
      */
     public int countVowels(String str) {
         // TODO: Implement this method
-        return 0;
+        int count=0; 
+
+        for(int i=0; i<str.length(); i++){
+            char apple = Character.toLowerCase(str.charAt(i));
+            if(apple== 'a' || apple == 'e' || apple == 'i' || apple == 'o' || apple == 'u'){
+                count++;
+            }
+        }
+        return count;
     }
 
     /**
@@ -130,6 +146,13 @@ public class Unit4 {
      */
     public boolean isPalindrome(String str) {
         // TODO: Implement this method
+        String apple= "";
+        for(int i=str.length()-1; i>=0; i--){
+            apple+= str.charAt(i);
+        }
+        if(str.equals(apple)){
+            return true;
+        }
         return false;
     }
 
@@ -161,6 +184,24 @@ public class Unit4 {
      */
     public void printAsteriskPatterns(int n) {
         // TODO: Implement this method
+        for(int i=0; i<n; i++){
+            System.out.print("*"); 
+        }
+        System.out.print("\n ");
+        
+        for(int i=0; i<n; i++) { 
+            for(int j=0; j<n; j++){
+                System.out.print("*");
+            }
+            System.out.print("\n ");
+        }
+
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                    System.out.print("* ");
+            }
+            System.out.print("\n ");
+        }
     }
 
     /**
@@ -185,5 +226,12 @@ public class Unit4 {
      */
     public void multiplicationTable(int n) {
         // TODO: Implement this method
+        
+        for(int row=1; row<=n; row++){
+            for(int col=1; col<=n; col++){
+                System.out.print(col + " ");
+            }
+            System.out.print(row + " ");
+        }
     }
 }
