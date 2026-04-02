@@ -29,8 +29,11 @@ public class Unit4 {
      * @return the sum of integers from 1 to n
      */
     public int sumNumbers(int n) {
-        // TODO: Implement this method
-        return 0;
+        int sum=0; 
+        for(int i=1; i<=n; i++){
+            sum+=i;
+        }
+        return sum;
     }
 
     /**
@@ -56,8 +59,11 @@ public class Unit4 {
     public String repeatString(String str, int n) {
         // TODO: Implement this method
         String temp="";
-        for(int i=0 i<n; i++){
-            temp+=str; 
+        if(n==0 || str.equals("")){
+            return 0;
+        }
+        for(int i=0; i<n; i++){
+            temp+=str + " "; 
         }
         return temp;
     }
