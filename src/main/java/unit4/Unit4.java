@@ -60,7 +60,7 @@ public class Unit4 {
         // TODO: Implement this method
         String temp="";
         if(n==0 || str.equals("")){
-            return 0;
+            return temp;
         }
         for(int i=0; i<n; i++){
             temp+=str + " "; 
