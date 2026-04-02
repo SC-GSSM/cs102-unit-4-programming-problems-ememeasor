@@ -235,14 +235,14 @@ public class Unit4 {
         
         int[] apple= new int[n];
         for(int i=1; i<=n; i++){
-            a[i-1]=i; 
+            apple[i-1]=i; 
         }
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                System.oout.print(a[j]+"\t");
+                System.out.print(apple[j]+ "\t");
             }
             for(int j=0; j<n; j++){
-                a[j]+=j+1;
+                apple[j]+=j+1;
             }
             System.out.print("\n");
         }
